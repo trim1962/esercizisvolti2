@@ -288,3 +288,7 @@ TSWLatexianTemp*
 #*Notes.bib
 
 *.pdf
+/solutions/exercise-*.tex
+/esercizisecondo.exam
+/esercizisecondo.cthm
+/esercizisecondo.records

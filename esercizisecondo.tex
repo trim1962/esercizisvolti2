@@ -1,3 +1,7 @@
+% !TeX spellcheck = it_IT
+% !TeX root = esercizisecondo.tex
+
+
 \documentclass[openany,a4paper]{book}%
 \usepackage{base}
 \usepackage{eurosym}
@@ -106,24 +110,24 @@
 	%\addcontentsline{toc}{chapter}{\listtablename}
 	%\listoftables
 	
-	\addcontentsline{toc}{chapter}{\listfigurename}
-	\listoffigures
-	\renewcommand\lstlistlistingname{Esempi e contro esempi}
-	\addcontentsline{toc}{chapter}{\lstlistlistingname}
-	\addcontentsline{toc}{section}{Esempi}
-	\lstlistoflistings%{}
-	{
-		%	https://tex.stackexchange.com/questions/318486/number-freestyle-causes-an-overlay-in-the-list-of-tcolorboxes/318512#318512
-		\makeatletter
-		\renewcommand{\l@tcolorbox}{\@dottedtocline{1}{0pt}{3em}}
-		\makeatother
-		\tcblistof[\section*]{thm}{Esempi}
-		\addcontentsline{toc}{section}{Contro esempi}
-		\tcblistof[\section*]{cthm}{Contro esempi}
-	}
-\tcblistof[\section*]{exam}{Esercizi svolti%
-	\label{listofexercises}}
-\addcontentsline{toc}{section}{Esercizi svolti}
+%	\addcontentsline{toc}{chapter}{\listfigurename}
+%	\listoffigures
+%	\renewcommand\lstlistlistingname{Esempi e contro esempi}
+%	\addcontentsline{toc}{chapter}{\lstlistlistingname}
+%	\addcontentsline{toc}{section}{Esempi}
+%	\lstlistoflistings%{}
+%	{
+%		%	https://tex.stackexchange.com/questions/318486/number-freestyle-causes-an-overlay-in-the-list-of-tcolorboxes/318512#318512
+%		\makeatletter
+%		\renewcommand{\l@tcolorbox}{\@dottedtocline{1}{0pt}{3em}}
+%		\makeatother
+%		\tcblistof[\section*]{thm}{Esempi}
+%		\addcontentsline{toc}{section}{Contro esempi}
+%		\tcblistof[\section*]{cthm}{Contro esempi}
+%	}
+%\tcblistof[\section*]{exam}{Esercizi svolti%
+%	\label{listofexercises}}
+%\addcontentsline{toc}{section}{Esercizi svolti}
 \mainmatter%
 \input{compilaDUE}
 \backmatter
