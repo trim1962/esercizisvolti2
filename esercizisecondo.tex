@@ -1,0 +1,135 @@
+\documentclass[openany,a4paper]{book}%
+\usepackage{base}
+\usepackage{eurosym}
+%\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\usepackage[big]{layaureo}
+\usepackage{grafica}
+\usepackage{matematica}
+\usepackage{tabelle}
+\DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
+\DeclareCaptionFormat{esempio}{\textbf{Esempio \thefigure}#2#3}
+\usepackage{imakeidx}
+\makeindex[options=-s ../Mod_base/oldclaudio.sti]
+\usepackage{date}
+\usepackage{pagina}
+\usepackage{unita_misura}
+\usepackage{indice}
+\usepackage{utili}
+\usepackage{copyright}
+\usepackage{CDloghi}
+\usepackage{stand_class}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{placeins} 
+\makeatletter
+\renewcommand\frontmatter{%
+	\cleardoublepage
+	\@mainmatterfalse
+	\pagenumbering{arabic}}
+\renewcommand\mainmatter{%
+	\cleardoublepage
+	\@mainmattertrue}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%lunghezza arrotondamenti%%%%%
+\newcommand{\lungarrotandamento}{4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{compilaUNO}
+\usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
+\usepackage[toc,page]{appendix}
+
+\renewcommand{\appendixtocname}{Appendice}
+
+\renewcommand{\appendixpagename}{Appendice}
+
+\usepackage[italian]{varioref}
+\usepackage{hyperxmp}
+\usepackage[pdfpagelabels]{hyperref}
+\usepackage[italian]{cleveref}
+\usepackage{tcolorboxgest}
+\title{Esercizi svolti primo}
+\author{Claudio Duchi}
+\date{\datetime}
+\hypersetup{%
+	pdfencoding=auto,
+	urlcolor={blue},
+	pdftitle={Esercizi svolti},
+	pdfsubject={secondo},
+	pdfstartview={FitH},
+	pdfpagemode={UseOutlines},
+	pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
+	pdflang={it},
+	pdfmetalang={it},
+	pdfkeywords={scomposizioni},
+	pdfcopyright={Copyright (C) 2023, Claudio Duchi},
+	pdfcontactpostcode={},
+	pdfcontactphone={},
+	pdfcontactemail={claduc},
+	pdfcontactcountry={Italy},
+	pdfcontactcity={Perugia},
+	pdfcontactaddress={},
+	pdfcaptionwriter={Claudio Duchi},
+	pdfauthortitle={},%
+	pdfauthor={Claudio Duchi},
+	linkcolor={blue},
+	colorlinks=true,
+	citecolor={red},
+	breaklinks,
+	bookmarksopen,
+	verbose,
+	baseurl={http://breviariomatematico.altervista.org}
+}
+\listfiles
+\begin{document}
+	\frontmatter
+	\begin{titlepage}
+		\begin{center}
+			\Lgrandedue\\[1cm]
+			\textsc{\LARGE Claudio Duchi}\\[1.2cm]
+			\HRule \\[0.4cm]
+			{ \huge \bfseries ESERCIZI SVOLTI DI MATEMATICA}\\[0.4cm]
+			{\LARGE \textsc{SECONDO}}
+			\HRule \\[1.2cm]
+			\vfill
+			\polylogo[5.5]{18}		
+			{\large $-$\DTMnow$-$}	
+		\end{center}
+		{\centering
+			Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
+			\gitCommitterDate \\
+		}
+	\end{titlepage}
+	\setcounter{page}{2} 
+	\CDcopyright
+	\tableofcontents 
+	%\addcontentsline{toc}{chapter}{\listtablename}
+	%\listoftables
+	
+	\addcontentsline{toc}{chapter}{\listfigurename}
+	\listoffigures
+	\renewcommand\lstlistlistingname{Esempi e contro esempi}
+	\addcontentsline{toc}{chapter}{\lstlistlistingname}
+	\addcontentsline{toc}{section}{Esempi}
+	\lstlistoflistings%{}
+	{
+		%	https://tex.stackexchange.com/questions/318486/number-freestyle-causes-an-overlay-in-the-list-of-tcolorboxes/318512#318512
+		\makeatletter
+		\renewcommand{\l@tcolorbox}{\@dottedtocline{1}{0pt}{3em}}
+		\makeatother
+		\tcblistof[\section*]{thm}{Esempi}
+		\addcontentsline{toc}{section}{Contro esempi}
+		\tcblistof[\section*]{cthm}{Contro esempi}
+	}
+\tcblistof[\section*]{exam}{Esercizi svolti%
+	\label{listofexercises}}
+\addcontentsline{toc}{section}{Esercizi svolti}
+\mainmatter%
+\input{compilaDUE}
+\backmatter
+\addcontentsline{toc}{chapter}{\indexname}
+\printindex
+\appendix
+\chapter{Mezzi usati}
+\CDMezziUsati
+\end{document}
