@@ -613,20 +613,186 @@ Risolvere il sistema
 	y=\dfrac{1}{2}
 	\]
 \end{exercise}
-\[ \tikzmark{0}\begin{cases}
+\begin{exercise}{}
+	Risolvere il sistema 
+	\[
+	\begin{cases}
+	2x-3y=0\\
+	4x-2y=1
+	\end{cases}
+	\]
+	\tcblower
+\[
+	\begin{cases}
+	2x-3y=0\\
+	4x-2y=1
+\end{cases}
+\tikzmark{0}\begin{cases}
+	2x-3y=0\\
+	\\
+	\tikzmark{1}4x-2y=1\tikzmark{2}
+\end{cases}
+\begin{tikzpicture}[remember picture, overlay]
+	\node[below=0.1cm and 0cm of 1](3){};
+	\node[below=0.1cm and 0cm of 2](4){};
+	\node[below=-0.89cm and 1cm of 0](8){$2$};%alto
+	\node[left=1cm and 0cm of 1](5){};%basso
+	\node[below right=0.2cm and 0.1cm of 5](6) {};%risultato
+%	\draw (3) edge  (4);%linea
+	\node[below=-0.29cm and 1cm of 0](7){};%operazione
+\end{tikzpicture}
+	\begin{cases}
+	4x-6y=0\\
+	4x-2y=1
+\end{cases}
+\tikzmark{0}\begin{cases}
+	4x-6y=0\\
+	\\
+	\tikzmark{1}4x-2y=1\tikzmark{2}
+\end{cases}
+\begin{tikzpicture}[remember picture, overlay]
+	\node[below=0.1cm and 0cm of 1](3){};
+	\node[below=0.1cm and 0cm of 2](4){};
+	\node[below=-0.89cm and 1cm of 0](8){};%alto
+	\node[left=1cm and 0cm of 1](5){};%basso
+	\node[below right=0.2cm and 0.1cm of 5](6) {$0-4y=-1$};%risultato
+		\draw (3) edge  (4);%linea
+	\node[below=-0.29cm and 1cm of 0](7){$-$};%operazione
+\end{tikzpicture}
+	x=\dfrac{1}{4}
+	\]
+	
+	\medskip
+	\[
+	\begin{cases}
+		2x-3y=0\\
+		4x-2y=1
+	\end{cases}
+	\tikzmark{0}\begin{cases}
 		2x-3y=0\\
 		\\
 		\tikzmark{1}4x-2y=1\tikzmark{2}
-	\end{cases}\]
+	\end{cases}
 	\begin{tikzpicture}[remember picture, overlay]
 		\node[below=0.1cm and 0cm of 1](3){};
 		\node[below=0.1cm and 0cm of 2](4){};
-		\node[left=1cm and 0cm of 1](5){$3$};
-		\node[below=-0.89cm and 1cm of 0](8){$2$};
-		\node[below right=0.2cm and 0.1cm of 5](6) {$0-y=-13$};
-		\draw (3) edge  (4);
-		\node[below=-0.29cm and 1cm of 0](7){$+$};
+		\node[below=-0.89cm and 1cm of 0](8){$2$};%alto
+		\node[left=1cm and 0cm of 1](5){$3$};%basso
+		\node[below right=0.2cm and 0.1cm of 5](6) {};%risultato
+		%	\draw (3) edge  (4);%linea
+		\node[below=-0.29cm and 1cm of 0](7){};%operazione
 	\end{tikzpicture}
+	\begin{cases}
+		4x-6y=0\\
+		12x-6y=3
+	\end{cases}
+	\tikzmark{0}\begin{cases}
+		4x-6y=0\\
+		\\
+		\tikzmark{1}12x-6y=3\tikzmark{2}
+	\end{cases}
+	\begin{tikzpicture}[remember picture, overlay]
+		\node[below=0.1cm and 0cm of 1](3){};
+		\node[below=0.1cm and 0cm of 2](4){};
+		\node[below=-0.89cm and 1cm of 0](8){};%alto
+		\node[left=1cm and 0cm of 1](5){};%basso
+		\node[below right=0.2cm and 0.1cm of 5](6) {$-8x\:0=-3$};%risultato
+		\draw (3) edge  (4);%linea
+		\node[below=-0.29cm and 1cm of 0](7){$-$};%operazione
+	\end{tikzpicture}
+	x=\dfrac{3}{8}
+	\]
+\end{exercise}
+\begin{exercise}{}
+	Risolvere il sistema 
+	\[
+	\begin{cases}
+		x-2y=-1\\
+		2x-y=2
+	\end{cases}
+	\]
+	\tcblower
+	\[
+	\begin{cases}
+	x-2y=-1\\
+	2x-y=2
+	\end{cases}
+	\tikzmark{0}\begin{cases}
+		x-2y=-1\\
+		\\
+		\tikzmark{1}2x-y=2\tikzmark{2}
+	\end{cases}
+	\begin{tikzpicture}[remember picture, overlay]
+		\node[below=0.1cm and 0cm of 1](3){};
+		\node[below=0.1cm and 0cm of 2](4){};
+		\node[below=-0.89cm and 1cm of 0](8){$2$};%alto
+		\node[left=1cm and 0cm of 1](5){};%basso
+		\node[below right=0.2cm and 0.1cm of 5](6) {};%risultato
+		%	\draw (3) edge  (4);%linea
+		\node[below=-0.29cm and 1cm of 0](7){};%operazione
+	\end{tikzpicture}
+	\begin{cases}
+		2x-4y=-2\\
+		2x-y=2
+	\end{cases}
+	\tikzmark{0}\begin{cases}
+		2x-4y=-2\\
+		\\
+		\tikzmark{1}2x-y=2\tikzmark{2}
+	\end{cases}
+	\begin{tikzpicture}[remember picture, overlay]
+		\node[below=0.1cm and 0cm of 1](3){};
+		\node[below=0.1cm and 0cm of 2](4){};
+		\node[below=-0.89cm and 1cm of 0](8){};%alto
+		\node[left=1cm and 0cm of 1](5){};%basso
+		\node[below right=0.2cm and 0.1cm of 5](6) {$0-3y=-4$};%risultato
+		\draw (3) edge  (4);%linea
+		\node[below=-0.29cm and 1cm of 0](7){$-$};%operazione
+	\end{tikzpicture}
+	x=\dfrac{4}{3}
+	\]
+	
+	\medskip
+	\[
+	\begin{cases}
+		x-2y=-1\\
+		2x-y=2
+	\end{cases}
+	\tikzmark{0}\begin{cases}
+			x-2y=-1\\
+		\\
+		\tikzmark{1}2x-y=2\tikzmark{2}
+	\end{cases}
+	\begin{tikzpicture}[remember picture, overlay]
+		\node[below=0.1cm and 0cm of 1](3){};
+		\node[below=0.1cm and 0cm of 2](4){};
+		\node[below=-0.89cm and 1cm of 0](8){};%alto
+		\node[left=1cm and 0cm of 1](5){$2$};%basso
+		\node[below right=0.2cm and 0.1cm of 5](6) {};%risultato
+		%	\draw (3) edge  (4);%linea
+		\node[below=-0.29cm and 1cm of 0](7){};%operazione
+	\end{tikzpicture}
+	\begin{cases}
+		x-2y=-1\\
+		4x-2y=4
+	\end{cases}
+	\tikzmark{0}\begin{cases}
+		x-2y=-1\\
+		\\
+		\tikzmark{1}4x-2y=4\tikzmark{2}
+	\end{cases}
+	\begin{tikzpicture}[remember picture, overlay]
+		\node[below=0.1cm and 0cm of 1](3){};
+		\node[below=0.1cm and 0cm of 2](4){};
+		\node[below=-0.89cm and 1cm of 0](8){};%alto
+		\node[left=1cm and 0cm of 1](5){};%basso
+		\node[below right=0.2cm and 0.1cm of 5](6) {$-8x\:0=-5$};%risultato
+		\draw (3) edge  (4);%linea
+		\node[below=-0.29cm and 1cm of 0](7){$-$};%operazione
+	\end{tikzpicture}
+	x=\dfrac{5}{3}
+	\]
+\end{exercise}
 \tcbstoprecording
 \newpage
 \chapter{Soluzioni esercizi}
