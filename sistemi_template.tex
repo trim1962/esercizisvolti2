@@ -1,0 +1,27 @@
+% !TeX TS-program = lualatex
+\documentclass{article}
+% \usepackage{fontspec}
+\usepackage[a4paper]{geometry}
+\usepackage{tikz}
+%https://www.guitex.org/home/images/doc/GuideGuIT/introtikzmark.pdf
+\newcommand{\tikzmark}[1]{\tikz[remember picture,overlay,baseline=-.7ex]\node(#1){};}
+\usetikzlibrary{positioning}
+\usetikzlibrary{calc}
+\usepackage{babel}
+\usepackage{amsmath}
+\begin{document}
+\[ \tikzmark{0}\begin{cases}
+	2x-3y=0\\
+	\\
+	\tikzmark{1}4x-2y=1\tikzmark{2}
+\end{cases}\]
+\begin{tikzpicture}[remember picture, overlay]
+	\node[below=0.1cm and 0cm of 1](3){};
+	\node[below=0.1cm and 0cm of 2](4){};
+	\node[left=1cm and 0cm of 1](5){$3$};
+	\node[below=-0.89cm and 1cm of 0](8){$2$};
+	\node[below right=0.2cm and 0.1cm of 5](6) {$0-y=-13$};
+	\draw (3) edge  (4);
+	\node[below=-0.29cm and 1cm of 0](7){$+$};
+\end{tikzpicture}
+\end{document}
